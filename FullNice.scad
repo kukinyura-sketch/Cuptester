@@ -344,11 +344,11 @@ module green_frame(pd, pcl, pth, ht, xw, yd) {
         }
         
         // ПИРАМИДКИ В ПОЛОСТИ (у передней стенки)
-        translate([pyramid_offset, pyramids_y, 0])
-            truncated_pyramid(pyramid_size, top_size, pyramid_height);
-        
-        translate([fixture_width - pyramid_offset - pyramid_size, pyramids_y, 0])
-            truncated_pyramid(pyramid_size, top_size, pyramid_height);
+translate([pyramid_offset, pyramids_y, 0])
+    truncated_pyramid(pyramid_size, top_size, pyramid_height);
+
+translate([fixture_width - pyramid_offset, pyramids_y, 0])
+    truncated_pyramid(pyramid_size, top_size, pyramid_height);
     }
 }
 
